@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @user.department %>
+</p>
+
+<p>
+  <strong>Myskills:</strong>
+  <%= @user.myskills %>
+</p>
+
+<p>
+  <strong>Wantedskills:</strong>
+  <%= @user.wantedskills %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @user.location %>
+</p>
+
+<p>
+  <strong>Available:</strong>
+  <%= @user.available %>
+</p>
+
+<p>
+  <strong>Mentor:</strong>
+  <%= @user.mentor %>
+</p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @user.private %>
+</p>
+
+<p>
+  <strong>Personal:</strong>
+  <%= @user.personal %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

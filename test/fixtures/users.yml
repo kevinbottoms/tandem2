@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  department: MyString
+  myskills: MyString
+  wantedskills: MyString
+  location: MyString
+  available: false
+  mentor: false
+  private: false
+  personal: MyString
+
+two:
+  name: MyString
+  department: MyString
+  myskills: MyString
+  wantedskills: MyString
+  location: MyString
+  available: false
+  mentor: false
+  private: false
+  personal: MyString
