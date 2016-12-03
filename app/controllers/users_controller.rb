@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy,]
 
   # GET /users
   # GET /users.json
@@ -10,7 +10,6 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-
     @users = User.where("myskills = ? AND wantedskills = ?", @user.wantedskills, @user.myskills)
   end
 
@@ -62,6 +61,8 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
