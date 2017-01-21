@@ -6,13 +6,65 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style>
+
+      table {
+    border-collapse: collapse;
+    }
+
+    th, td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    padding-left: 1em;
+    }
+      body {
+        background-color: #00aaad;
+        color: #ffffff;
+      }
+        h1, h2 {
+
+        background-color: #86328c;
+        text-align: center;
+        height: 100px;
+        padding-top: 25px;
+        color: #ffffff;
+        }
+
+        h3 {
+          background-color: #86328c;
+          text-align: center;
+          height: 50px;
+          padding-top: 12px;
+          color: #ffffff;
+        }
+
+        a {
+          color: #B00100;
+          text-decoration: underline;
+        }
+
+        label, input {
+          padding-right: 2em;
+        }
+
+        .button-spec {
+          color: #333333;
+        }
+
+    </style>
   </head>
 
   <body>
-  <%= form_tag(users_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
-      <%= submit_tag "Search", :name => nil %>
-  <% end %>
-    <%= yield %>
+  <div id="main-container" class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+
   </body>
 </html>
+
